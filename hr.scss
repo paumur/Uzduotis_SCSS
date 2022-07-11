@@ -1,0 +1,15 @@
+.hr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  &__green-line {
+    height: 12px;
+    width: 80px;
+    background-color: #7abcac;
+  }
+  &__gray-line {
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+  }
+}
