@@ -1,29 +1,23 @@
 header {
-  .green-bar {
-    height: 64px;
-    background-color: #7abcac;
-  }
-  .white-bar {
-    border: solid 4px black;
+  .nav-bar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
     margin: auto;
-    max-width: 512px;
-    &__name {
-      text-align: center;
-      font-size: 48px;
-      font-weight: 400;
-      margin-top: 48px;
-      line-height: 40px;
-    }
-    &__profession {
-      color: white;
-      background-color: black;
-      max-width: 320px;
-      margin: auto;
-      text-align: center;
-      font-size: 24px;
-      line-height: 28px;
-      margin-top: 20px;
-      margin-bottom: 44px;
+    width: 100%;
+    nav {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 64px;
+      border-bottom: solid 2px #d9d9d9;
+      .home-button {
+        width: 40px;
+      }
+      .nav-button {
+        margin: 0 27px;
+      }
     }
   }
 }

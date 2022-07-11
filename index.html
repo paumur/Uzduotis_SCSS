@@ -11,6 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,209 +25,171 @@
       rel="stylesheet"
     />
     <link href="./styles.scss" rel="stylesheet" />
-    <title>Tailwind sample</title>
+    <title>Praktinis Egzaminas HTML CSS</title>
   </head>
   <body>
     <div id="app">
       <header>
-        <div class="green-bar"></div>
-        <div class="white-bar">
-          <h2 class="white-bar__name">Paulius Murašovas</h2>
-          <div class="white-bar__profession">PROGRAMMER</div>
+        <div class="nav-bar-wrapper">
+          <nav class="nav-bar">
+            <div class="nav-bar__item">
+              <a href="/"
+                ><img class="home-button" src="./img/Logo.png" alt="Home page"
+              /></a>
+            </div>
+            <div class="nav-bar__item">
+              <a href="#"><img src="./img/Account.png" alt="" /></a>
+              <a href="#"
+                ><img
+                  class="nav-button"
+                  src="./img/Cart.png"
+                  alt="Shopping cart"
+              /></a>
+            </div>
+          </nav>
         </div>
       </header>
       <main>
-        <!-- Links, About Cards Wrapper Section -->
-        <section class="links-about-wrapper">
-          <div class="links-card">
-            <h3 class="links-card__header">Links</h3>
-            <div class="hr">
-              <div class="hr__green-line"></div>
-              <div class="hr__gray-line"></div>
+        <section class="shopping-item-card">
+          <div class="item-pictures">
+            <div>
+              <img
+                class="item-pictures__main"
+                src="./img/Shopping-item-1.png"
+                alt=""
+              />
             </div>
-            <div class="links-card__content">
-              <div>
-                <img src="./img/linkedin.png" alt="linkedin logo" />
-                <a href="https://linkedin.com" target="_blank"
-                  >LINKEDIN/username</a
-                >
+            <div>
+              <img
+                class="item-pictures__secondary"
+                src="./img/Shopping-item-1.png"
+                alt=""
+              />
+              <img
+                class="item-pictures__secondary"
+                src="./img/Shopping-item-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item-content">
+            <h2 class="item-content__item-name">Beautiful Emerald Thuja</h2>
+            <div class="price-container">
+              <p class="price-container__price-before">$35.99</p>
+              <p class="price-container__price-now">$35.99</p>
+              <div>Sale</div>
+            </div>
+            <div class="size-container">
+              <p>Size:</p>
+              <button
+                class="size-container__button size-button__button--selected"
+              >
+                0.50m
+              </button>
+              <button class="size-container__button">0.70m</button>
+              <button class="size-container__button">0.90m</button>
+            </div>
+            <div class="quantity-container">
+              <p>Quantity:</p>
+              <div class="quantity-container__button">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
               </div>
-              <div>
-                <img src="./img/twitter.png" alt="linkedin logo" />
-                <a href="https://twitter.com" target="_blank"
-                  >TWITTER/@user-handle</a
-                >
+            </div>
+            <div class="cart-buttons">
+              <button class="cart-buttons__add-to-cart">Add to Cart</button>
+              <button class="cart-buttons__buy-now">Buy it Now</button>
+            </div>
+            <p class="item-content__description">
+              Minions ipsum bee do bee do bee do underweaaar butt tulaliloo
+              pepete jiji. Bee do bee do bee do hana dul sae poulet tikka
+              masala.
+            </p>
+            <p class="item-content__description">
+              Minions ipsum bee do bee do bee do underweaaar butt tulaliloo
+              pepete jiji. Bee do bee do bee do hana dul sae poulet tikka masala
+              poopayee para tú gelatooo ti aamoo! Hahaha wiiiii. Tulaliloo
+              pepete me want bananaaa! Daa potatoooo tulaliloo. Poulet tikka
+              masala hahaha daa tulaliloo bappleees bananaaaa. Daa underweaaar
+              tulaliloo poopayee bappleees belloo! Hahaha tulaliloo ti aamoo!
+              Tank yuuu! poopayee pepete jeje uuuhhh hana dul sae baboiii tank
+              yuuu! Tatata bala tu. Jeje po kass wiiiii underweaaar ti aamoo!
+              Jiji bananaaaa. Poulet tikka masala hana dul sae chasy underweaaar
+              ti aamoo! Tank yuuu! Jeje Poulet tikka masala hahaha daa tulaliloo
+              bappleees bananaaaa.
+            </p>
+            <div class="item-details">
+              <div class="item-details__item">
+                <div>
+                  <img src="./img/sizing-symbol.png" alt="Sizing icon" />
+                  <p>Materials</p>
+                </div>
+                <div>
+                  <button>
+                    <img src="./img/Arrow-down.png" alt="Arrow down" />
+                  </button>
+                </div>
               </div>
-              <div>
-                <img src="./img/github.png" alt="linkedin logo" />
-                <a href="https://github.com" target="_blank">GITHUB/username</a>
+              <div class="item-details__item">
+                <div>
+                  <img src="./img/delivery-symbol.png" alt="Sizing icon" />
+                  <p>Shipping & Returns</p>
+                </div>
+                <div>
+                  <button>
+                    <img src="./img/Arrow-down.png" alt="Arrow down" />
+                  </button>
+                </div>
               </div>
-              <div>
-                <img src="./img/dev.png" alt="linkedin logo" />
-                <a href="https://dev.to" target="_blank">BLOG/blog-name</a>
+              <div class="item-details__item">
+                <div>
+                  <img src="./img/sizing-symbol.png" alt="Sizing icon" />
+                  <p>Dimensions</p>
+                </div>
+                <div>
+                  <button>
+                    <img src="./img/Arrow-down.png" alt="Arrow down" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="about-card">
-            <h3 class="about-card__header">About me</h3>
-            <div class="hr">
-              <div class="hr__green-line"></div>
-              <div class="hr__gray-line"></div>
-            </div>
+        </section>
+        <section class="banner">
+          <div class="banner__description">
+            <h2>Create your personal oasis</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend
-              diam vel tempor lacinia. Suspendisse non augue egestas, dapibus
-              justo et, lobortis ex. Nullam tortor diam, venenatis at enim a,
-              lacinia porttitor erat. Vivamus tempor dictum leo id aliquam.
-              Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus
-              elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Maecenas ut justo
-              libero. Vestibulum vitae mattis diam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum
+              debitis asperiores, consequuntur aliquid nemo.
             </p>
           </div>
-        </section>
-        <!-- Education, Personal, Technical Cards Section -->
-        <section>
-          <div class="education-personal-technical-wrapper">
-            <div class="education-card">
-              <h3 class="education-card__header">Education</h3>
-              <div class="hr">
-                <div class="hr__green-line"></div>
-                <div class="hr__gray-line"></div>
-              </div>
-              <div class="education-card__item education-card__item--b-border">
-                <p>school name</p>
-                <p>2009 - 2013</p>
-                <p>Degree</p>
-              </div>
-              <div class="education-card__item">
-                <p>school name</p>
-                <p>2009 - 2013</p>
-                <p>Degree</p>
-              </div>
-            </div>
-            <div class="personal-skills-card">
-              <h3 class="personal-skills-card__header">personal skills</h3>
-              <div class="hr">
-                <div class="hr__green-line"></div>
-                <div class="hr__gray-line"></div>
-              </div>
-              <div class="personal-skills-card__items">
-                <div class="pill pill--beginner">teamwork</div>
-                <div class="pill pill-intermediate">communication</div>
-                <div class="pill pill-advanced">organization</div>
-              </div>
-            </div>
-            <div class="technical-skills-card">
-              <h3 class="technical-skills-card__header">technical skills</h3>
-              <div class="hr">
-                <div class="hr__green-line"></div>
-                <div class="hr__gray-line"></div>
-              </div>
-              <div class="technical-skills-card__items">
-                <div class="pill pill--beginner">html</div>
-                <div class="pill pill--beginner">css/scss</div>
-                <div class="pill pill-intermediate">javascript</div>
-                <div class="pill pill-intermediate">react.js</div>
-              </div>
-            </div>
+          <div class="banner__image">
+            <img src="./img/section2-img-2.png" alt="" />
           </div>
         </section>
-        <!-- Work Experience Cards Section -->
-        <section>
-          <h3 class="education-header">Work Experience</h3>
-          <div class="hr education-header__hr">
-            <div class="hr__green-line"></div>
-            <div class="hr__gray-line"></div>
-          </div>
-          <div class="work-experience-wrapper">
-            <div class="work-experience-card">
-              <div class="work-experience-card__header">
-                <p>JOB POSITION</p>
-                <p>Company</p>
-                <p>2018 - present</p>
-              </div>
-              <div class="work-experience-card__content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas ut justo libero. Vestibulum vitae mattis diam.
-                  Vivamus eleifend diam vel tempor lacinia. Suspendisse non
-                  augue.
-                </p>
-                <ul>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="work-experience-card">
-              <div class="work-experience-card__header">
-                <p>JOB POSITION</p>
-                <p>Company</p>
-                <p>2018 - present</p>
-              </div>
-              <div class="work-experience-card__content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas ut justo libero. Vestibulum vitae mattis diam.
-                  Vivamus eleifend diam vel tempor lacinia. Suspendisse non
-                  augue.
-                </p>
-                <ul>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="work-experience-card">
-              <div class="work-experience-card__header">
-                <p>JOB POSITION</p>
-                <p>Company</p>
-                <p>2018 - present</p>
-              </div>
-              <div class="work-experience-card__content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas ut justo libero. Vestibulum vitae mattis diam.
-                  Vivamus eleifend diam vel tempor lacinia. Suspendisse non
-                  augue.
-                </p>
-                <ul>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <section class="product-information">
+          <p class="product-information__content">
+            Minions ipsum bee do bee do bee do underweaaar butt tulaliloo pepete
+            jiji. Bee do bee do bee do hana dul sae poulet tikka masala poopayee
+            para tú gelatooo ti aamoo! Hahaha wiiiii. Tulaliloo pepete me want
+            bananaaa! Daa potatoooo tulaliloo. Poulet tikka masala hahaha daa
+            tulaliloo bappleees bananaaaa.
+          </p>
         </section>
       </main>
       <footer>
-        <hr />
         <div class="footer-wrapper">
           <div class="footer-item">
-            <div class="footer-item__title">location</div>
-            <div class="footer-item__content">
-              <p>Porto, Portugal</p>
-            </div>
+            <p>
+              We care about your garden. Copyright © 2019–2022 magic-garden.test
+            </p>
           </div>
           <div class="footer-item">
-            <div class="footer-item__title">contact</div>
-            <div class="footer-item__content">
-              <a href="tel:+37060000333">+37060000333</a>
-              <a href="mailto:email@test.dev">email@test.dev</a>
-            </div>
-          </div>
-          <div class="footer-item">
-            <div class="footer-item__title">social</div>
-            <div class="footer-item__content">
-              <a href="https://linkedin.com" target="_blank"
-                >Linkedin/username</a
-              >
-              <a href="https://twitter.com" target="_blank"
-                >Twitter/@user-handle</a
-              >
-            </div>
+            <img
+              src="./img/Cards.png"
+              alt="Accepted by Visa Mastercard Maestro Discover"
+            />
           </div>
         </div>
       </footer>
